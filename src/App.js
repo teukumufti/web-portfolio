@@ -1,13 +1,28 @@
-import './styles/App.css';
+import React from "react";
+import { Routes, Route } from 'react-router-dom';
+
+import Home from "./pages/Home"
+
+import Navbar from "./components/Navbar"
+
 
 function App() {
+  const component = (Child) => {
+    return (
+      <div className="App">
+        <Navbar />
+        <Child />
+      </div>
+    );
+  };
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div>
+      <Routes>
+        <Route path="/" element={component(Home)}></Route>
+      </Routes>
     </div>
   );
 }
+
 
 export default App;
