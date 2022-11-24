@@ -15,9 +15,15 @@ module.exports = {
         'slate': {
           50: '#ffffff',
         },
+        'white': {
+          50: '#fff',
+        },
         'blue': {
           500: '#3b82f6',
         },
+        'zinc': {
+          100: '#0a0a0a',
+        }
       },
       extend: {
         backgroundImage: {

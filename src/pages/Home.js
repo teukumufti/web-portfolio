@@ -1,4 +1,5 @@
 import React from "react";
+import About from "./About";
 
 function Home() {
     return (
@@ -38,6 +39,10 @@ function Home() {
         </a>
         </div>
      </div>
+    
+    <div className="mt-48">
+        <About/>
+    </div>
 
     </div>
     
