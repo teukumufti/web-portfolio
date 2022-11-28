@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About";
+import Services from "./Services"
 
 function Home() {
     return (
@@ -42,6 +43,10 @@ function Home() {
     
     <div className="mt-48">
         <About/>
+    </div>
+
+    <div className="mt-48">
+        <Services/>
     </div>
 
     </div>
