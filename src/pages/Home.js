@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 import Services from "./Services"
+import Experience from "./Experience";
 
 function Home() {
     return (
@@ -47,6 +48,10 @@ function Home() {
 
     <div className="mt-48">
         <Services/>
+    </div>
+
+    <div className="mt-48">
+        <Experience/>
     </div>
 
     </div>
