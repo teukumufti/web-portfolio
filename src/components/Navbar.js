@@ -4,11 +4,11 @@ export const NavbarComponent = () => {
   return (
     <Navbar className="text-slate-50">
       <NavbarBrand href="#">
-        <div class="text-4xl font-extrabold ...">
+        {/* <div class="text-4xl font-extrabold ...">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-aqua-100 to-blue-500">
           TM
         </span>
-      </div>
+      </div> */}
       </NavbarBrand>
       <NavbarToggler />
       <NavbarCollapse>
