@@ -23,6 +23,10 @@ module.exports = {
         },
         'zinc': {
           100: '#0a0a0a',
+          200: '#161818',
+        },
+        'gray': {
+          100: '#B7B7B7'
         }
       },
       extend: {
