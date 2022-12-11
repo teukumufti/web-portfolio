@@ -27,8 +27,8 @@ export const NavbarComponent = () => {
           </NavbarItem>
         </NavbarNav>
         <NavbarNav orientation="end">
-        <div class="flex space-x-2 justify-center">
-        <button class="px-2 py-2 text-xs rounded bg-zinc-100" type='button'>
+        <div className="flex space-x-2 justify-center">
+        <button className="px-2 py-2 text-xs rounded bg-zinc-100" type='button'>
           Admin
         </button>
       </div>
