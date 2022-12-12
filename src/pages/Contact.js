@@ -8,7 +8,7 @@ function Contact() {
 
        
 
-        <form className="block m-auto mt-24 max-w-xl">
+        <form className="block sm:m-auto sm:mt-24 max-w-xl m-2 mt-28">
             <div className="form-group mb-6">  
             <label htmlFor="name" className="form-label inline-block mb-2 text-gray-100">NAME</label>
             <input type="name" className="form-control block w-full px-3 py-1.5 text-base text-white-50 bg-zinc-100 border border-solid border-aqua-100 rounded focus:outline-none focus:shadow-none" 
@@ -26,10 +26,18 @@ function Contact() {
             aria-describedby="message" placeholder="type your message here"/>
             </div>
 
-            <button type="submit" className="px-2.5 py-2.5 bg-aqua-100 text-sm font-bold rounded">
+            <button type="submit" className="px-2.5 py-2.5 bg-aqua-100 mb-12 text-sm font-bold rounded">
             SEND MESSAGE
             </button>
         </form>
+
+
+        <footer className="text-center lg:text-left">
+        <div className="text-zinc-100 bg-aqua-100 text-center p-2 text-sm">
+          © 2022 Copyright:
+          <a className="text-gray-800" href="https://www.linkedin.com/in/teukumufti/" target='blank'>Teuku Mufti</a>
+        </div>
+        </footer>
       </div>
     )
 }

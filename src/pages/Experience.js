@@ -7,7 +7,7 @@ function Experience() {
         <div className="border-b-2 text-aqua-100 w-40 m-auto mt-2"></div>
 
          
-         <div className="flex justify-center mt-32">
+         <div className="grid sm:flex justify-center mt-32">
 
           <div className="block p-6 rounded-sm bg-zinc-200 max-w-sm m-1">
             <p className="text-gray-100"> March 2022 - Juni 2022</p>

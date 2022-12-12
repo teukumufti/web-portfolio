@@ -9,16 +9,16 @@ function Home() {
     return (
     <div>
 
-     <div className="bg-[url('./assets/images/code.jpg')] bg-cover h-screen">
+     <div className="bg-[url('./assets/images/code.jpg')] bg-cover sm:bg-cover sm:h-screen bg-no-repeat pb-12">
         {/* title */}
-        <div className="text-slate-50 text-start pl-52 pt-96">
-            <h5 className="text-3xl tracking-widest">TEUKU</h5>
-            <h5 className="text-8xl tracking-widest">MUFTI</h5>
-            <span className="text-3xl tracking-widest">Fullstack Developer</span>
+        <div className="text-slate-50 text-start pl-12 pt-60 sm:pl-52 sm:pt-96">
+            <h5 className="text-xl sm:text-3xl tracking-widest">TEUKU</h5>
+            <h5 className="text-5xl sm:text-8xl tracking-widest">MUFTI</h5>
+            <span className="text-xl sm:text-3xl tracking-widest">Fullstack Developer</span>
         </div>
 
         {/* icons social media */}
-        <div className="flex pl-52 pt-72">
+        <div className="flex pt-56 pl-12 sm:pl-52 sm:pt-72">
         {/* instagram */}
         <a href={'https://www.instagram.com/teukumfti/'} target='blank'>
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" className="m-1">
@@ -44,19 +44,19 @@ function Home() {
         </div>
      </div>
     
-    <div className="mt-48">
+    <div className="mt-72">
         <About/>
     </div>
 
-    <div className="mt-48">
+    <div className="mt-60">
         <Services/>
     </div>
 
-    <div className="mt-48">
+    <div className="mt-60">
         <Experience/>
     </div>
 
-    <div className="mt-48">
+    <div className="mt-60">
         <Contact/>
     </div>
 
