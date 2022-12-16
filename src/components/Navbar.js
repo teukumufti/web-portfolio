@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export const NavbarComponent = () => {
+
+  const [ color, setColor ] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 8)
+    setColor(true)
+   else {
+    setColor(false)
+  }
+}
+
+window.addEventListener('scroll', changeColor)
+
+
   return (
-    <Navbar className="text-slate-50">
+    <Navbar className={color ? 'bg-zinc-100 text-slate-50' : 'navbar text-slate-50'}>
       <NavbarBrand href="#">
         {/* <div class="text-4xl font-extrabold ...">
         <span class="bg-clip-text text-transparent bg-gradient-to-r from-aqua-100 to-blue-500">
@@ -41,7 +54,7 @@ export const NavbarComponent = () => {
 /* Navbar logic */
 
 const style = {
-  navbar: `fixed px-4 py-2 top-0 w-full lg:flex lg:flex-row lg:items-center lg:justify-start bg-transparent`,
+  navbar: `fixed px-4 py-2 top-0 w-full lg:flex lg:flex-row lg:items-center lg:justify-start`,
   brand: `cursor-pointer font-bold inline-block mr-4 py-1.5 text-2xl whitespace-nowrap`,
   toggler: `block float-right text-4xl lg:hidden focus:outline-none`,
   item: `whitespace-pre cursor-pointer px-4 py-3 hover:text-aqua-100`,
