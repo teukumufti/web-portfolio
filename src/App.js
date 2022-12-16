@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home"
 
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Child />
+        <Footer />
       </div>
     );
   };
