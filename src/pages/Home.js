@@ -1,4 +1,5 @@
 import React from "react";
+
 import About from "./About";
 import Services from "./Services"
 import Experience from "./Experience";
@@ -9,7 +10,7 @@ function Home() {
     return (
     <div>
 
-     <div className="bg-[url('./assets/images/code.jpg')] bg-cover sm:bg-cover sm:h-screen bg-no-repeat pb-12">
+     <div id="menu-home" className="bg-[url('./assets/images/code.jpg')] bg-cover sm:bg-cover sm:h-screen bg-no-repeat pb-12">
         {/* title */}
         <div className="text-slate-50 text-start pl-12 pt-60 sm:pl-52 sm:pt-96">
             <h5 className="text-xl sm:text-3xl tracking-widest">TEUKU</h5>
@@ -44,20 +45,20 @@ function Home() {
         </div>
      </div>
     
-    <div className="mt-72">
-        <About/>
+    <div id="menu-about" className="mt-72">
+        <About />
     </div>
 
-    <div className="mt-60">
-        <Services/>
+    <div id="menu-service" className="mt-60">
+        <Services />
     </div>
 
-    <div className="mt-60">
-        <Experience/>
+    <div id="menu-experience" className="mt-60">
+        <Experience />
     </div>
 
-    <div className="mt-60">
-        <Contact/>
+    <div id="menu-contact" className="mt-60">
+        <Contact />
     </div>
 
     </div>
