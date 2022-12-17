@@ -11,12 +11,12 @@ function Services() {
 
         <div className="m-1">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 justify-items-center mt-24">
-                {data.map(() =><div className="flex lg:m-12 m-7">
-                    <div className="border-l-2 text-aqua-100 sm:h-36 h-32 w-32 sm:mt-2 sm:w-full">
-                        <img src={require('../assets/icons/git.png')} className="pt-7" alt="icons" />
+                {data.map((item, index) =><div className="flex lg:m-12 m-7">
+                    <div className="border-l-2 text-aqua-100 sm:h-28 h-28 w-28 sm:mt-2 sm:w-full">
+                        <img src={item.img} className="pt-6" alt="icons" />
                     </div>
-                    <div className="pt-7 sm:ml-5 ml-1">
-                        <span className="text-md sm:text-2xl text-slate-50 font-bold">GIT</span>
+                    <div className="pt-6 sm:ml-5 ml-1">
+                        <span className="text-md sm:text-2xl text-slate-50 font-bold">{item.title}</span>
                         <p className="text-slate-50 text-xs text-start sm:w-52 mt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                     </div>
                 </div>)}
